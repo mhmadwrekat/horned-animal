@@ -30,3 +30,6 @@ div{
 .section div p{
   font-weight : bolder;
 }
+.like{
+  cursor:grab ;
+}
