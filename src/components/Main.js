@@ -3,26 +3,26 @@ import BeastData from '../data.json' ;
 import HornedBeast from './HornedBeast.js' ; 
 
 class Main extends Component {
-
     render(){
-
             return(
-                <>
-                <h2>Horned - Animals</h2>
-                <section class='section'>
+              <section class='section'>
+
+                <div className='row'>
                 {             
                     BeastData.map(num => {
                         return < HornedBeast 
+                        handleOpen = {this.props.handleOpen}
                         title = {num.title}
                         imgUrl = {num.imgUrl}
-                        keyWord = {num.keyWord}
+                        keyword = {num.keyword}
                         horns = {num.horns}
                         description = {num.description}
                          />
                     })
                 }
+                </div>
                 </section>
-                </>
+
             )
         }
     }

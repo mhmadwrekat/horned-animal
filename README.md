@@ -23,6 +23,28 @@ Finish time: 5:20 pm
 Actual time needed to complete: 1:50 Hour .
 
 ---
+Number and name of feature : **Feature #3** : Bootstrap .
+
+Estimate of time needed to complete: 2 Hours .
+
+Start time: 1:00 pm
+
+Finish time: 2:20 pm
+
+Actual time needed to complete: 1:20 Hour .
+
+---
+Number and name of feature : **Feature #4** : Display a Modal .
+
+Estimate of time needed to complete: 3 Hours .
+
+Start time: 2:20 pm
+
+Finish time: 6:20 pm
+
+Actual time needed to complete: 4 Hour .
+
+---
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
