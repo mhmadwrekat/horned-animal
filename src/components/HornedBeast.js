@@ -1,31 +1,41 @@
 import React , { Component } from 'react'
+import { Card , Col} from 'react-bootstrap' ;
+
 
 class HornedBeast extends Component {
-
     constructor(props){
         super(props);
         this.state = {
-            votees : '' , 
+            votes : '' , 
         }
     }
     voteFunc = () =>{
-                this.setState({
-                    votees : Number(this.state.votees+1) 
-                })
-    
+        this.setState({
+            votes : Number(this.state.votes+1) 
+      })
+    }
+            getHandleOpen=()=>{
+                let imgUrl = this.props.imgUrl ;
+                let description = this.props.description ;
+                this.props.handleOpen(imgUrl,description) ;
             }
-
-    render(){
-        
+    render(){    
         return(
-            <div>
-                <h2>{ this.props.title }</h2>
-                <img class='like' onClick={this.voteFunc} src={ this.props.imgUrl } width='280' height='180' ></img>
-                <p>Key Word : {this.props.keyWord} </p>
-                <p>Number Of Horns : {this.props.horns} </p>
-                <p>Description : { this.props.description } .</p>
-                <h4>❤️{this.state.votees}</h4>
-            </div>
+
+            <Col>
+              <br></br>
+<Card border="info" style={{ width: '18rem' }}>
+    <Card.Header>{this.props.title}</Card.Header>
+    <Card.Body>
+    <Card.Img       onClick = {this.getHandleOpen} variant='top' src={this.props.imgUrl} height='200'/>
+      <Card.Title>{this.props.keyword}</Card.Title>
+    </Card.Body>
+    <Card.Footer className="text-muted">
+    <pre><p class = 'pVote' onClick={this.voteFunc}>❤️{this.state.votes}</p>                     🦄{this.props.horns}</pre>
+    </Card.Footer>
+  </Card>
+  </Col>
+
         )
     }
 }
