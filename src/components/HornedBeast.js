@@ -22,9 +22,9 @@ class HornedBeast extends Component {
                 <h2>{ this.props.title }</h2>
                 <img class='like' onClick={this.voteFunc} src={ this.props.imgUrl } width='280' height='180' ></img>
                 <p>Key Word : {this.props.keyWord} </p>
-                <p> Number Of Horns : {this.props.horns} </p>
+                <p>Number Of Horns : {this.props.horns} </p>
                 <p>Description : { this.props.description } .</p>
-                <h6><img class='like' onClick={this.voteFunc} src='https://www.seekpng.com/png/detail/511-5113166_heart-instagram-like-icon-png.png' width='30' height='30'></img> {this.state.votees}</h6>
+                <h4>❤️{this.state.votees}</h4>
             </div>
         )
     }
