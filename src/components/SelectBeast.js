@@ -18,7 +18,7 @@ export class SelectBeast extends Component {
         <Modal.Body>
           <img
             src={this.props.imgUrl}
-            alt="image" width='500' height='400'>
+            alt="image" width='450' height='400'>
           </img>
         </Modal.Body>
         <Modal.Footer>

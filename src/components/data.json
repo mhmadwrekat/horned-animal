@@ -133,10 +133,24 @@
       "horns": 2
     },
     {
+      "imgUrl": "https://p1.pxfuel.com/preview/285/303/813/mouflon-wild-sheep-horns-imposing-portrait-horned.jpg",
+      "title": "big mouflon",
+      "description": " wild sheep native to the Caspian region from eastern Turkey, Armenia, Azerbaijan to Iran .",
+      "keyword": "mouflon",
+      "horns": 2
+    } ,
+    {
       "imgUrl": "https://www.nps.gov/band/learn/nature/images/short-horned-lizard-open-mouth-18.jpg?maxwidth=650&autorotate=false",
       "title": "Horned Lizard",
       "description": "Fave food: ants",
       "keyword": "lizard",
       "horns": 100
+    },
+    {
+      "imgUrl": "https://rurallivingtoday.com/wp-content/uploads/animals-with-horns-2.jpeg",
+      "title": "Mature stag",
+      "description": " grow and shed new antlers each year , In this they differ from permanently horned antelope .",
+      "keyword": "deer",
+      "horns": 2
     }
   ]
