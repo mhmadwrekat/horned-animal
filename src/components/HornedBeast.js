@@ -19,7 +19,6 @@ class HornedBeast extends Component {
         let description = this.props.description;
         this.props.handleOpen(imgUrl, description);
     }
-
     render() {
         return (
             <Col>
