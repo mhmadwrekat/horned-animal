@@ -32,6 +32,7 @@ class App extends Component {
     })
   }
   handleSelectForm = (event) => {
+    event.preventDefault();
     let value = event.target.value;
     Number(value);
     if (value) {
