@@ -38,19 +38,13 @@ class Header extends Component {
         </Navbar>
         <Carousel>
           <Carousel.Item>
-            <img
-              className="inline-block w-50"
-              src="https://images.unsplash.com/photo-1514036783265-fba9577fc473?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          <img
+              className="inline-block w-100"
+              src="https://ae01.alicdn.com/kf/HTB1F5l2QXXXXXcvXpXXq6xXFXXXg/4767-art-artwork-Dragons-fantasy-horns-Poster-Framed-Gallery-wrap-art-print-home-wall-decor-wall.jpg_Q90.jpg_.webp"
               alt="First slide"
-            />
-            <img
-              className="inline-block w-50"
-              src="https://imgc.allpostersimages.com/img/print/posters/dlillc-jackson-s-chameleon_a-G-13448768-14258384.jpg"
-              alt="Second slide"
+              height='450'
             />
             <Carousel.Caption>
-              <h3><b>Horned Beast Gallery</b></h3>
-              <p>Pictures Of Animals With Killer Headgear , Best Horns In The Animal World - The Definitive List</p>
             </Carousel.Caption>
           </Carousel.Item>
 
@@ -67,7 +61,9 @@ class Header extends Component {
             />
             <Carousel.Caption>
               <h3><b>Horned Beast Gallery</b></h3>
-              <p>Antlers are a single structure composed of bone, cartilage, fibrous tissue, skin, nerves, and blood vessels .</p>
+              <p>Pictures Of Animals With Killer Headgear , Best Horns In The Animal World - The Definitive List</p>
+{/*<p>Antlers are a single structure composed of bone, cartilage, fibrous tissue, skin, nerves, and blood vessels .</p> */}
+
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -77,4 +73,11 @@ class Header extends Component {
   }
 }
 export default Header
+/*
 
+            <img
+              className="inline-block w-50"
+              src="https://imgc.allpostersimages.com/img/print/posters/dlillc-jackson-s-chameleon_a-G-13448768-14258384.jpg"
+              alt="Second slide"
+            />
+*/

@@ -13,7 +13,7 @@ class Forms extends Component {
             <Form style={{ width: '300px', marginLeft: '50px' }}>
                 <Row className="align-items-center">
                     <Form.Select aria-label="Default select example" onClick={(e) => { this.props.handleSelectForm(e) }}>
-                        <option value="">Select Number Of Horns 🦄 ....</option>
+                        <option value="0">Select Number Of Horns 🦄 ....</option>
                         <option value="1">1 🦄</option>
                         <option value="2">2 🦄</option>
                         <option value="3">3 🦄</option>

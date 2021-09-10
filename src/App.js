@@ -16,7 +16,8 @@ class App extends Component {
       showModal: false,
       imgUrl: '',
       description: '',
-      dataFilter: BeastData
+      dataFilter: BeastData,
+      data: BeastData
     }
   }
   handleOpen = (imgUrl, description) => {
@@ -33,11 +34,10 @@ class App extends Component {
   }
   handleSelectForm = (event) => {
     event.preventDefault();
-    let value = event.target.value;
-    Number(value);
+    let value = parseInt(event.target.value) ;
     if (value) {
-      let filterd = this.state.dataFilter.filter(item => {
-        return Number((item.horns == value));
+      let filterd = this.state.data.filter(item => {
+        return item.horns === value ;
       })
       this.setState({ dataFilter: filterd });
     } else {
