@@ -37,6 +37,23 @@ class Header extends Component {
           <pre>        </pre>
         </Navbar>
         <Carousel>
+        <Carousel.Item>
+            <img
+              className="inline-block w-50"
+              src="https://images.unsplash.com/photo-1514036783265-fba9577fc473?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+              alt="First slide"
+            />
+            <img
+              className="inline-block w-50"
+              src="https://imgc.allpostersimages.com/img/print/posters/dlillc-jackson-s-chameleon_a-G-13448768-14258384.jpg"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3><b>Horned Beast Gallery</b></h3>
+<p>Antlers are a single structure composed of bone, cartilage, fibrous tissue, skin, nerves, and blood vessels .</p>
+
+            </Carousel.Caption>
+          </Carousel.Item>
           <Carousel.Item>
           <img
               className="inline-block w-100"

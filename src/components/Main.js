@@ -48,6 +48,3 @@ class Main extends Component {
 
 
 export default Main
-/*
-https://ae01.alicdn.com/kf/HTB1F5l2QXXXXXcvXpXXq6xXFXXXg/4767-art-artwork-Dragons-fantasy-horns-Poster-Framed-Gallery-wrap-art-print-home-wall-decor-wall.jpg_Q90.jpg_.webp
-*/
