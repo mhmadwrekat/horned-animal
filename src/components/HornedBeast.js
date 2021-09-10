@@ -29,7 +29,8 @@ class HornedBeast extends Component {
                         <Card.Title>{this.props.keyword}</Card.Title>
                     </Card.Body>
                     <Card.Footer className="text-muted">
-                        <pre><p class='pVote' onClick={this.voteFunc}>❤️{this.state.votes}</p>                 🦄{this.props.horns}</pre>
+                    <p>🦄{this.props.horns}</p>
+                        <p class='pVote' onClick={this.voteFunc}>❤️{this.state.votes}</p>
                     </Card.Footer>
                 </Card>
                 <br></br>
