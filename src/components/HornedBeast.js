@@ -20,6 +20,28 @@ class HornedBeast extends Component {
         let description = this.props.description;
         this.props.handleOpen(imgUrl, description);
     }
+    render() {
+        return (
+                            <Col>
+                            <Card border="info" style={{ width: '18rem' }}>
+                                <Card.Header>{this.props.title}</Card.Header>
+                                <Card.Body>
+                                    <Card.Img onClick={this.getHandleOpen} variant='top' src={this.props.imgUrl} height='200' />
+                                    <Card.Title>{this.props.keyword}</Card.Title>
+                                </Card.Body>
+                                <Card.Footer className="text-muted">
+                                <p>🦄{this.props.horns}</p>
+                                    <p class='pVote' onClick={this.voteFunc}>❤️{this.state.votes}</p>
+                                </Card.Footer>
+                            </Card>
+                            <br></br>
+                        </Col>
+              )
+        
+    }
+}
+export default HornedBeast
+/*
     /*
 [
   'Primary',
@@ -49,11 +71,8 @@ class HornedBeast extends Component {
   </Card>
 ));
     */
-
-    render() {
-        return (
-        
-                <Col>
+   /*
+<Col>
                 <Card
                   bg={'dark'}
                   text={'Dark'.toLowerCase() === 'light' ? 'dark' : 'white'}
@@ -72,24 +91,4 @@ class HornedBeast extends Component {
                 </Card>
                 <br></br>
                 </Col>
-              )
-        
-    }
-}
-export default HornedBeast
-/*
-            <Col>
-                <Card border="info" style={{ width: '18rem' }}>
-                    <Card.Header>{this.props.title}</Card.Header>
-                    <Card.Body>
-                        <Card.Img onClick={this.getHandleOpen} variant='top' src={this.props.imgUrl} height='200' />
-                        <Card.Title>{this.props.keyword}</Card.Title>
-                    </Card.Body>
-                    <Card.Footer className="text-muted">
-                    <p>🦄{this.props.horns}</p>
-                        <p class='pVote' onClick={this.voteFunc}>❤️{this.state.votes}</p>
-                    </Card.Footer>
-                </Card>
-                <br></br>
-            </Col>
 */
