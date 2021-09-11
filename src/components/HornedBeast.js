@@ -7,8 +7,10 @@ class HornedBeast extends Component {
         super(props);
         this.state = {
             votes: '',
+            colorCard : '',
         }
     }
+
     voteFunc = () => {
         this.setState({
             votes: Number(this.state.votes + 1)
@@ -19,8 +21,80 @@ class HornedBeast extends Component {
         let description = this.props.description;
         this.props.handleOpen(imgUrl, description);
     }
+    a = (a) => {
+        if(this.props.horns === 1)
+        {
+            a = 'dark' ; 
+        } else if(this.props.horns === 2)
+        {
+            a = 'success' ;
+        } else if(this.props.horns === 3)
+        {
+            a = 'warning' ;
+        } else if(this.props.horns === 100)
+        {
+            a = 'danger' ;
+        }
+    return a
+}
+    /*
+[
+  'Primary',
+  'Secondary',
+  'Success',
+  'Danger',
+  'Warning',
+  'Info',
+  'Light',
+  'Dark',
+].map((variant, idx) => (
+  <Card
+    bg={variant.toLowerCase()}
+    key={idx}
+    text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
+    style={{ width: '18rem' }}
+    className="mb-2"
+  >
+    <Card.Header>Header</Card.Header>
+    <Card.Body>
+      <Card.Title>{variant} Card Title </Card.Title>
+      <Card.Text>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+));
+    */
+
     render() {
         return (
+        
+                <Col>
+                <Card
+                  bg={this.a(this.state.colorCard)}
+                  text={this.state.colorCard.toLowerCase() === 'light' ? 'dark' : 'white'}
+                  style={{ width: '18rem' }}
+                  className="mb-2"
+                >
+                  <Card.Header>{this.props.title}</Card.Header>
+                  <Card.Body>
+                  <Card.Img onClick={this.getHandleOpen} variant='top' src={this.props.imgUrl} height='200' />
+                  <Card.Title>{this.props.keyword}</Card.Title>
+                  </Card.Body>
+                  <Card.Footer className="mb-2">
+                    <p>🦄{this.props.horns}</p>
+                        <p class='pVote' onClick={this.voteFunc}>❤️{this.state.votes}</p>
+                    </Card.Footer>
+                </Card>
+                <br></br>
+                </Col>
+              )
+        
+    }
+}
+export default HornedBeast
+/*
             <Col>
                 <Card border="info" style={{ width: '18rem' }}>
                     <Card.Header>{this.props.title}</Card.Header>
@@ -35,7 +109,4 @@ class HornedBeast extends Component {
                 </Card>
                 <br></br>
             </Col>
-        )
-    }
-}
-export default HornedBeast
+*/
