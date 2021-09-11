@@ -7,7 +7,6 @@ class HornedBeast extends Component {
         super(props);
         this.state = {
             votes: '',
-            colorCard : '',
         }
     }
 
@@ -21,22 +20,6 @@ class HornedBeast extends Component {
         let description = this.props.description;
         this.props.handleOpen(imgUrl, description);
     }
-    a = (a) => {
-        if(this.props.horns === 1)
-        {
-            a = 'dark' ; 
-        } else if(this.props.horns === 2)
-        {
-            a = 'success' ;
-        } else if(this.props.horns === 3)
-        {
-            a = 'warning' ;
-        } else if(this.props.horns === 100)
-        {
-            a = 'danger' ;
-        }
-    return a
-}
     /*
 [
   'Primary',
@@ -72,8 +55,8 @@ class HornedBeast extends Component {
         
                 <Col>
                 <Card
-                  bg={this.a(this.state.colorCard)}
-                  text={this.state.colorCard.toLowerCase() === 'light' ? 'dark' : 'white'}
+                  bg={'dark'}
+                  text={'Dark'.toLowerCase() === 'light' ? 'dark' : 'white'}
                   style={{ width: '18rem' }}
                   className="mb-2"
                 >
