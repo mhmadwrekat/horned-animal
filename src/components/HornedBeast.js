@@ -24,7 +24,7 @@ class HornedBeast extends Component {
     a = (a) => {
         if(this.props.horns === 1)
         {
-            a = 'info' ; 
+            a = 'dark' ; 
         } else if(this.props.horns === 2)
         {
             a = 'success' ;
